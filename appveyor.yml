@@ -10,9 +10,9 @@ platform:
 configuration:
 - Release
 
-clone_folder: C:\CI_test
+clone_folder: C:\Hazel
 
 build:
-  project: C:\CI_test\build\CI_test.sln
+  project: C:\Hazel
   parallel: true
   verbosity: normal

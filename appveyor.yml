@@ -1,0 +1,21 @@
+version: 0.1 ({build})
+skip_branch_with_pr: true
+
+image:
+- Visual Studio 2019
+
+platform:
+- x64
+
+matrix:
+fast_finish: true # Stop remaining jobs after a job failure
+
+configuration:
+- Release
+
+clone_folder: C:\CI_test
+
+build:
+  project: C:\CI_test\build\CI_test.sln
+  parallel: true
+  verbosity: normal

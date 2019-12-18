@@ -5,7 +5,7 @@ image:
 - Visual Studio 2019
 
 init:
-  - call make
+  - set makefiles="MinGW Makefiles"
 
 platform:
 - x64

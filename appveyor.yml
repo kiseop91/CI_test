@@ -1,3 +1,4 @@
+  
 version: 0.1 ({build})
 skip_branch_with_pr: true
 
@@ -10,11 +11,7 @@ platform:
 configuration:
 - Release
 
-clone_folder: C:Hazel
-
-before_build:
-    - cd C:\Hazel\scripts
-    - Win-GenProjects.bat
+clone_folder: C:\Hazel
 
 before_build:
   - cd C:\Hazel\scripts

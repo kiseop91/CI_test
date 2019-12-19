@@ -4,18 +4,19 @@ skip_branch_with_pr: true
 image:
 - Visual Studio 2019
 
-init:
-  - call make
-
 platform:
 - x64
 
 configuration:
 - Release
 
-clone_folder: C:\Hazel
+clone_folder: C:Hazel
+
+before_build:
+    - cd C:\Hazel\scripts
+    - Win-GenProjects.bat
 
 build:
-  project: C:\Hazel
+  project: C:\Hazel\Hazel.sln
   parallel: true
   verbosity: normal

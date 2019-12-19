@@ -13,10 +13,10 @@ configuration:
 clone_folder: C:\Hazel
 
 before_build:
-  - cd C:\Hazel\CI_test\scripts
+  - cd C:\Hazel\scripts
   - Win-GenProjects.bat
 
 build:
-  project: C:\Hazel\CI_test\Hazel.sln
+  project: C:\Hazel\Hazel.sln
   parallel: true
   verbosity: normal

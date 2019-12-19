@@ -16,7 +16,7 @@ clone_folder: C:\Hazel
 before_build:
   - cd C:\Hazel\scripts
   - Win-GenProjects.bat
-  -  
+  - cd C:\Hazel
 
 build:
   project: C:\Hazel\Hazel.sln
